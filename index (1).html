@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabrina Shogeldiyeva | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <span class="logo">Sabrina Shogeldiyeva</span>
+    <nav role="tablist" aria-label="Bo'limlar">
+      <button role="tab" class="tab active" data-tab="kirish">Kirish</button>
+      <button role="tab" class="tab" data-tab="talim">Ta'lim</button>
+      <button role="tab" class="tab" data-tab="men">Men haqimda</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1-bo'lim: Kirish -->
+    <section id="kirish" class="panel active">
+      <p class="hello">Salom, men</p>
+      <h1>Sabrina<br>Shogeldiyeva</h1>
+      <p class="lead">Matematika bilan shug'ullanaman: o'qiyman, o'qitaman va musobaqalarda qatnashaman.</p>
+      <p class="place">Surxondaryo viloyati, Termiz tumani, Orol mahallasi</p>
+
+      <h2>Yutuqlarim</h2>
+      <ul class="wins">
+        <li><strong>2026</strong> Turkmanistonda o'tgan OMOUS xalqaro musobaqasi: 3-o'rin</li>
+        <li><strong>Zakovat</strong> Zakovat turnirlarida 1-, 2- va 3-o'rinlar</li>
+      </ul>
+    </section>
+
+    <!-- 2-bo'lim: Ta'lim -->
+    <section id="talim" class="panel">
+      <h1>Ta'lim</h1>
+      <div class="edu">
+        <h2>Termiz davlat pedagogika instituti</h2>
+        <p>Hozir shu institutda tahsil olaman.</p>
+        <p>Qo'shimcha: o'quv markazda 1,5 yildan beri matematikadan dars beraman.</p>
+      </div>
+    </section>
+
+    <!-- 3-bo'lim: Men haqimda -->
+    <section id="men" class="panel">
+      <h1>Men haqimda</h1>
+      <p class="age"><span>19</span> yosh</p>
+      <h2>Qiziqishlarim</h2>
+      <ul class="tags">
+        <li>Matematika</li>
+        <li>Ustozlik</li>
+        <li>Zakovat</li>
+        <li>Olimpiadalar</li>
+      </ul>
+
+      <h2>Menga yozing</h2>
+      <form id="form">
+        <input name="name" placeholder="Ismingiz" required maxlength="100">
+        <input name="contact" placeholder="Telefon yoki @telegram (ixtiyoriy)" maxlength="100">
+        <textarea name="message" placeholder="Xabaringiz" rows="4" required maxlength="2000"></textarea>
+        <button type="submit">Xabarni yuborish</button>
+        <p id="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
